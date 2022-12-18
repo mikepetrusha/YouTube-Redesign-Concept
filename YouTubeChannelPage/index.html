@@ -12,274 +12,182 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
+<body class="app-wrapper">
     <header class="header">
-        <buttun class="burger">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-        </buttun>
-        <img src="img/logo.svg" alt="YouTube" class="logo">
-        <img src="img/White.png" alt="YouTube" class="logo2">
-        <p class="mobile-text">Margaret Phelps</p>
-        <div class="input-group">
-            <input type="search" name="search" class="input-search" placeholder="Search">
-            <button type="submit" class="button-search">
-                <svg class="icon icon-search" width="19" height="19">
-                    <use xlink:href="img/icons.svg#search"></use>
-                </svg>
-            </button>
+        <div class="search-wrapper">
+            <img class="burger-img image" src="./img/menu.svg" alt="" />
+            <img class="logo image" src="./img/yt-all.svg" alt="" />
+            <div class="search-input-wrapper">
+                <input class="search-input" type="text" placeholder="Search"></input>
+                <div class="search-logo-wrapper">
+                    <img class="search-logo" src="./img/search.svg" alt="" />
+                </div>
+            </div>
         </div>
-        <div class="mobile-search">
-            <svg class="icon icon-search" width="19" height="19">
-                <use href="img/icons.svg#search"></use>
-            </svg>
-
-            <svg class="icon icon-search" width="19" height="19" id="tri">
-                <use href="img/icons.svg#tri"></use>
-            </svg>
+        <div class="user-wrapper">
+            <div class="new-search" id="yt-little">
+                <img  src="./img/youtube-small-button.svg" alt="" />
+            </div>
+           <h6 class="new-search" id="new-title">Margaret Phelps</h6>
+            <div class="new-search">
+                <img class="search-logo" src="./img/search.svg" alt="" />
+            </div>
+            <div class="new-search">
+                <img id="dot3" class="search-logo" src="./img/dots3.svg" alt="" />
+            </div>
+            <img class="dots" src="./img/camera.svg" alt="" />
+            <img class="dots" src="./img//dots.svg" alt="" />
+            <img class="dots" src="./img/alerts.svg" alt="" />
+            <img class="user-img" src="img/Userpic.png" alt="" />
         </div>
-        <div class="icons">
-            <a href="#" class="icons-link">
-                <svg class="icon icon-video" width="27" height="20">
-                    <use xlink:href="img/icons.svg#video"></use>
-                </svg>
-            </a>
-            <a href="#" class="icons-link">
-                <svg class="icon icon-apps" width="21" height="21">
-                    <use xlink:href="img/icons.svg#apps"></use>
-                </svg>
-            </a>
-            <a href="#" class="icons-link">
-                <svg class="icon icon-notification" width="22" height="26">
-                    <use xlink:href="img/icons.svg#notification"></use>
-                </svg>
-            </a>
-        </div>
-        <a href="#" class="user">
-            <img src="img/Userpic.png" alt="Userpic" class="user-avatar">
-        </a>
-
-
     </header>
+    <div class="main-content-wrapper">
 
-
-
-    <div class="mobile-sidebar">
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <svg class="icon icon-home" width="20" height="19">
-                        <use href="img/icons.svg#home"></use>
-                    </svg>
-                    <span class="nav-text">Home</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <svg class="icon icon-trending" width="20" height="19">
-                        <use href="img/icons.svg#trending"></use>
-                    </svg>
-                    <span class="nav-text">Trending</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <svg class="icon icon-subscriptions" width="20" height="19">
-                        <use href="img/icons.svg#subscriptions"></use>
-                    </svg>
-                    <span class="nav-text">Subscriptions</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <svg class="icon icon-library" width="20" height="19">
-                        <use href="img/icons.svg#library"></use>
-                    </svg>
-                    <span class="nav-text">Library</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-
-    <!-- /.mobile-sidebar -->
-
-
-
-    <div class="conteiner">
-        <aside class="sidebar">
-            <nav class="nav">
-
-                <!-- menu 1 -->
-
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <svg class="icon icon-home" width="20" height="19">
-                                <use xlink:href="img/icons.svg#home"></use>
-                            </svg>
-                            <span class="nav-text">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <svg class="icon icon-trending" width="16" height="21">
-                                <use xlink:href="img/icons.svg#trending"></use>
-                            </svg>
-                            <span class="nav-text">Trending</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <svg class="icon icon-subscriptions" width="18" height="18">
-                                <use xlink:href="img/icons.svg#subscriptions"></use>
-                            </svg>
-                            <span class="nav-text">Subscriptions</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <!-- menu 2 -->
-
-                <ul class="nav-menu">
-                    <li class="nav-item" id="nav-library">
-                        <a href="#" class="nav-link">
-                            <svg class="icon icon-library" width="20" height="19">
-                                <use xlink:href="img/icons.svg#library"></use>
-                            </svg>
-                            <span class="nav-text">Library</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <svg class="icon icon-history" width="16" height="21">
-                                <use xlink:href="img/icons.svg#history"></use>
-                            </svg>
-                            <span class="nav-text">History</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <svg class="icon icon-watch-later" width="18" height="18">
-                                <use xlink:href="img/icons.svg#watch-later"></use>
-                            </svg>
-                            <span class="nav-text">Watch later</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <svg class="icon icon-favourites" width="18" height="18">
-                                <use xlink:href="img/icons.svg#favourites"></use>
-                            </svg>
-                            <span class="nav-text">Favourites</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <svg class="icon icon-liked-videos" width="18" height="18">
-                                <use xlink:href="img/icons.svg#liked"></use>
-                            </svg>
-                            <span class="nav-text">Liked videos</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <svg class="icon icon-music" width="18" height="18">
-                                <use xlink:href="img/icons.svg#music"></use>
-                            </svg>
-                            <span class="nav-text">Music</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <svg class="icon icon-games" width="18" height="18">
-                                <use xlink:href="img/icons.svg#games"></use>
-                            </svg>
-                            <span class="nav-text">Games</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">
-                            <svg class="icon icon-show-more" width="18" height="18">
-                                <use xlink:href="img/icons.svg#chevron-down"></use>
-                            </svg>
-                            <span class="nav-text">Show more</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- Subscriptions  -->
-
-            <h2 class="nav-title">Subscriptions</h2>
-
-            <ul class="nav-menu" id="sub-menu">
-                <li class="nav-item2">
-                    <a href="#" class="nav-link">
-                        <img src="img/Gussie.png" alt="Gussie Singleton" class="nav-image">
-                        <span class="nav-text">Gussie Singleton</span>
-                    </a>
-                </li>
-                <li class="nav-item2">
-                    <a href="#" class="nav-link">
-                        <img src="img/Nora.png" alt="Nora Francis" class="nav-image">
-                        <span class="nav-text">Nora Francis</span>
-                    </a>
-                </li>
-                <li class="nav-item2">
-                    <a href="#" class="nav-link">
-                        <img src="img/Belle.png" alt="Belle Briggs" class="nav-image">
-                        <span class="nav-text">Belle Briggs</span>
-                    </a>
-                </li>
-                <li class="nav-item2">
-                    <a href="#" class="nav-link">
-                        <img src="img/Eunice.png" alt="Eunice Cortez" class="nav-image">
-                        <span class="nav-text">Eunice Cortez</span>
-                    </a>
-                </li>
-                <li class="nav-item2">
-                    <a href="#" class="nav-link">
-                        <img src="img/Emma.png" alt="Emma Hanson" class="nav-image">
-                        <span class="nav-text">Emma Hanson</span>
-                    </a>
-                </li>
-                <li class="nav-item2">
-                    <a href="#" class="nav-link">
-                        <img src="img/Leah.png" alt="Leah Berry" class="nav-image">
-                        <span class="nav-text">Leah Berry</span>
-                    </a>
-                </li>
-            </ul>
-
-            <!-- Setting -->
-
-            <ul class="nav-menu" id="nav-setting">
+        <div class="mobile-sidebar">
+            <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <svg class="icon icon-setting" width="20" height="19">
-                            <use xlink:href="img/icons.svg#setting"></use>
-                        </svg>
-                        <span class="nav-text">Setting</span>
+                        <img class="navigation-img" src="./img/home.svg" alt="" />
+                        <span style="color: red;" class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img class="navigation-img trending-img" src="./img/trending.svg" alt="" />
+                        <span class="nav-text">Trending</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img class="navigation-img subscriptions-img" src="./img/subscriptions.svg" alt="" />
+                        <span class="nav-text">Subscriptions</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img class="navigation-img" src="./img/library.svg" alt="" />
+                        <span class="nav-text">Library</span>
                     </a>
                 </li>
             </ul>
-        </aside>
-    </div>
-
-
-
-
-
-
-
-
-    <main class="content">
-        <div class="green-cover">
-            <img src="img/Cover.png" alt="cover" class="green-cover">
         </div>
-        <div class="channel">
+
+
+        <navigation class="navigation-wrapper">
+         <div class="navigation-main">
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img" src="./img/home.svg" alt="" />
+                    </div>
+                    <p class="navigation-text active-text">Home</p>
+                </div>
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img trending-img" src="./img/trending.svg" alt="" />
+                    </div>
+                    <p class="navigation-text">Trending</p>
+                </div>
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img subscriptions-img" src="./img/subscriptions.svg" alt="" />
+                    </div>
+                    <p class="navigation-text">Subscriptions</p>
+                </div>
+            </div>
+            <div class="navigation-additional">
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img" src="./img/library.svg" alt="" />
+                    </div>
+                    <p class="navigation-text">Library</p>
+                </div>
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img" src="./img/history.svg" alt="" />
+                    </div>
+                    <p class="navigation-text">History</p>
+                </div>
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img" src="./img/watch-later.svg" alt="" />
+                    </div>
+                    <p class="navigation-text">Watch later</p>
+                </div>
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img" src="./img/favourites.svg" alt="" />
+                    </div>
+                    <p class="navigation-text">Favourites</p>
+                </div>
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img" src="./img/liked-videos.svg" alt="" />
+                    </div>
+                    <p class="navigation-text">Liked videos</p>
+                </div>
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img" src="./img/music.svg" alt="" />
+                    </div>
+                    <p class="navigation-text">Music</p>
+                </div>
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img" src="./img/games.svg" alt="" />
+                    </div>
+                    <p class="navigation-text">Games</p>
+                </div>
+                <div class="navigation-item">
+                    <div class="img-wrapper">
+                        <img class="navigation-img" src="./img/show-more.svg" alt="" />
+                    </div>
+                    <p class="navigation-text">Show more</p>
+                </div>
+            </div>
+            <div class="navigation-subs">
+                <h3 class="navigation-main-text">Subscriptions</h3>
+                <div class="navigation-subs-wrapper">
+                    <div class="navigation-subs-item">
+                        <img class="navigation-subs-img" src="./img/user-gussie.svg" alt="" />
+                        <p class="navigation-subs-text">Gussie Singleton</p>
+                    </div>
+                    <div class="navigation-subs-item">
+                        <img class="navigation-subs-img" src="./img/user-nora.svg" alt="" />
+                        <p class="navigation-subs-text">Nora Francis</p>
+                    </div>
+                    <div class="navigation-subs-item">
+                        <img class="navigation-subs-img" src="./img/user-belle.svg" alt="" />
+                        <p class="navigation-subs-text">Belle Briggs</p>
+                    </div>
+                    <div class="navigation-subs-item">
+                        <img class="navigation-subs-img" src="./img/user-eunice.svg" alt="" />
+                        <p class="navigation-subs-text">Eunice Cortez</p>
+                    </div>
+                    <div class="navigation-subs-item">
+                        <img class="navigation-subs-img" src="./img/user-emma.svg" alt="" />
+                        <p class="navigation-subs-text">Emma Hanson</p>
+                    </div>
+                    <div class="navigation-subs-item">
+                        <img class="navigation-subs-img" src="./img/user-leah.svg" alt="" />
+                        <p class="navigation-subs-text">Leah Berry</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-item settings">
+                <div class="img-wrapper">
+                    <img class="navigation-img" src="./img/settings.svg" alt="" />
+                </div>
+                <p class="navigation-text">Setting</p>
+            </div>
+        </navigation> 
+
+
+
+         <main class="content">
+            <div class="green-cover">
+            <img src="img/Cover.png" alt="cover" class="green-cover">
+            </div>
+             <div class="channel">
             <div class="channel-header">
                 <a href="#" class="channel-title">
                     <img src="img/Nora.png" alt="mainAvatar" class="channel-avatar">
@@ -319,12 +227,10 @@
                     <li class="chennel-item" id="about">
                         <span class="channel-menu-text">About</span>
                     </li>
-                    <svg class="icon icon-search" width="19" height="19" id="search">
-                        <use href="img/icons.svg#search"></use>
-                    </svg>
-                    <svg class="icon icon-search" width="19" height="19" id="chevron">
-                        <use href="img/icons.svg#chevron-down"></use>
-                    </svg>
+                  
+                    <img class="icon icon-search" id="search" src="./img/search.svg" alt="" />
+                    
+                    <img class="icon icon-search" id="chevron" src="./img/little-black-arrow.svg" alt="" />
                 </ul>
             </div>
 
@@ -343,9 +249,8 @@
                     <div class="channel-information">
                         <h3 class="video-title-channel">Choosing The Best Audio Player <br>Software For Your Computer
                         </h3>
-                        <p class="video-subtitle-channel">
-                            Your cheap internet-based banner advertising will become one of the sought for ads there
-                            are. Today, the world of Internet advertising is rapidly evolving beyond banner ads and
+                        <p class="video-subtitle-channel">Your cheap internet-based banner advertising will become one of the sought for ads there
+                            are.Today, the world of Internet advertising is rapidly evolving beyond banner ads and
                             intrusive pop-ups. Bayles A common medium for advertising on the Internet is the use of
                             banner ads.
                         </p>
@@ -393,7 +298,7 @@
         <div class="channel" id="margaret">
             <div class="channel-header">
                 <a href="#" class="channel-title" id="margo">
-                    <span class="channel-text">Margaret Phelps videos</span>
+                    <span class="channel-text2">Margaret Phelps videos</span>
                 </a>
 
 
@@ -537,11 +442,7 @@
 
         </div>
     </main>
-
-
-
-
-
+    </div>
 </body>
 
 </html>
